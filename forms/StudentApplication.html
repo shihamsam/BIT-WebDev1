@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BIT Student Application</title>
+    <script>
+    
+    function show(){
+        document.getElementById("pwdtxt").value = document.getElementById("pwd").value;
+        document.getElementById("pwd").style.display = "none";
+        document.getElementById("pwdtxt").style.display = "inline";
+        return false;
+    }
+    </script>
+</head>
+<body>
+
+    <h1>BIT Application Form</h1>
+
+    <form action="http://localhost/htmldemo/shiham.php"  method="POST">
+
+       <div> 
+           <label>Usename</label>
+            <input type="text" name="username" size="20">
+        </div>
+        <div>
+            <label>Password</label>
+            <input id="pwd" type="password" name="password" size="20">
+            <input id="pwdtxt" style="display:none"  type="text" name="password" size="20">
+        </div>
+           
+        <input type="button" id="showpwd" value="Show Password" onclick="javascript:show()">        
+        <input type="submit" value="Login">
+
+    </form>
+    
+</body>
+</html>
