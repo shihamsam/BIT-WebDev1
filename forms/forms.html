@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Sports Form</title>
+    <style>
+        div {
+            margin-top: 20px;
+        }
+        form{
+            background: #96D7F5;
+            padding:20px;
+        }
+        input[type='submit'] {
+            color: yellow;
+            background: black;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 align="center">Favourite Game</h1>
+    <!-- form action is where the form data will be submitted to -->
+    <form action="http://localhost/process.php" method="POST">
+        <!-- form method is used to denote whether we are posting the form (POST) or fething (GET)-->
+        <div>
+            <label> What is your favourite sport?</label>
+            <select name="sport">
+                <option value="cricket">Cricket</option>
+                <option value="football">Foot Ball</option>
+                <option value="tt">Table Tennis</option>
+            </select>
+        </div>
+        <div>
+            Gender
+            <input type="radio" name="Gender" value="male">Male
+            <input type="radio" name="Gender" value="female">Female
+        </div>
+
+        <div>
+            <label>Cities you like</label>
+            <br>
+            <input type="checkbox" name="Colombo"> Colombo
+            <input type="checkbox" name="Kandy"> Kandy
+            <input type="checkbox" name="Hambantota"> Hambantota
+            <input type="checkbox" name="Puttalam"> Puttalam
+            <input type="checkbox" name="Jaffna"> Jaffna
+
+        </div>
+        <!-- option value will be used when posting the information -->
+
+
+        <div>
+            <!-- input type submit is the button we use to trigger the posting of information-->
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+</body>
+
+</html>
