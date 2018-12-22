@@ -1,0 +1,20 @@
+i) 
+	P = INPUT AB, AC, BC
+	Q = BC > AB + AC
+	R = Not a Triangle (thrikonayak Nove)
+	S = Triangle ( Thrikonayaki)
+
+ii) (AB> BC + AC) AND (BC > AB + AC) AND( AC > AB + BC)
+
+iii)
+BEGIN
+	INPUT AB
+	INPUT AC
+	INPUT BC
+	IF (AB> BC + AC) AND (BC > AB + AC) AND ( AC > AB + BC) THEN
+		PRINT 'ABC is a Triangle'
+	ELSE
+		PRINT 'ABC is not a Triangle'
+	END IF
+END
+
