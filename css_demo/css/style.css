@@ -1,0 +1,19 @@
+p {
+  color: blue;
+  border: 1px solid red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  color: yellowgreen;
+   
+}
+
+.red-class {
+    color: red;
+}
+
+
+#para1 {
+  color: green;
+}
