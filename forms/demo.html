@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+       div {
+           margin-bottom: 15px;
+       }
+
+       h1{
+        font-family : 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 300;
+       }
+
+       input[type="text"]{
+            height: 30px;;
+       }
+
+       input[type="submit"]{
+           background: red;
+           border:none;
+           color: white;
+           padding: 10px;
+           width:100px;
+           text-transform: uppercase;
+       }
+
+       label {
+           font-size: 15px;
+           width:60px;
+           color: #55606e
+       }
+
+       .label-control{
+           width:60px;
+           display: inline-block;
+           vertical-align: top;
+
+       }
+
+       textarea {
+           width: 404px;
+           height:110px
+       }
+
+       form {
+           border: 1px solid gray;
+           padding: 0px 10px 10px 30px;
+       }
+
+       .form-block {
+           display: inline-block;
+           width:200px;
+       }
+
+       .block{
+           display: block;
+       }
+    </style>
+</head>
+<body>
+    <!-- <embed src="get_ready.mp3" play="true"> -->
+ <video src="xpath_intro.mp4" controls></video>
+     <audio src="get_ready.mp3" controls autoplay></audio>
+
+ <form action="process.php" method="POST" >
+    <h1>Get in Touch</h1>
+
+<div>
+    <div class="form-block">
+            <label class="label-control" for="name">Name</label>
+            <input type="text" name="name">
+    </div>
+   
+    <div class="form-block"> 
+        <label class="label-control" for="email">Email</label>
+        <input type="text" name="email">
+    </div>
+</div>
+
+<div>
+ 
+    <label class="label-control block" for="subject">Subject</label>
+    <input type="text" name="subject">
+</div>
+
+<div>
+    <label class="label-control block" for="message">Message</label>
+    <textarea name="message" cols="30">
+
+    </textarea>
+</div>
+    
+
+<div>
+    <input type="checkbox" name="subscribe"> <label> Want to subscribe to our newsletter as well?</label>
+</div>
+
+<div>
+    <input type="submit" value="Submit">
+</div>
+ </form>
+    
+</body>
+</html>
