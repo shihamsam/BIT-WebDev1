@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>My Javascript</title>
+    <script>
+      function calculateGrade() {
+        // calculate the grade 
+        var marks = document.getElementById('marks').value;
+
+        // marks = 70
+ 
+        if(marks >= 75){
+           document.getElementById('result').innerHTML = "A";
+        }
+        else if(marks >= 65){
+           document.getElementById('result').innerHTML = "B";
+        }
+        else if(marks >= 55){
+           document.getElementById('result').innerHTML = "C";
+        }
+        else if(marks >= 45){
+           document.getElementById('result').innerHTML = "S";
+        }
+        else {
+           document.getElementById('result').innerHTML = "Fail"
+           
+        }
+
+      }
+    </script>
+  </head>
+
+  <body>
+    <input type="text" name="marks" id="marks" value="0" />
+    <button onclick="calculateGrade()">Calculate grade</button>
+
+    <br />
+    <h1 id="result">A</h1>
+  </body>
+</html>
