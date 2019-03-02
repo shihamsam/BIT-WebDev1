@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script>
+      var state = 1;
+
+      function changeBorder() {
+        if (state == 1) {
+          document.getElementById("heading").style = "border: 1px solid red";
+          state = 0;
+        } else {
+          document.getElementById("heading").style = "border: 1px solid blue";
+          state = 1;
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 id="heading">SOme Heading</h1>
+    <button onclick="changeBorder()">Change Color</button>
+  </body>
+</html>
