@@ -1,0 +1,124 @@
+<html>
+  <head>
+    <title>Hallam Student Information</title>
+    <script>
+      function showDetails() {
+        var message = "";
+
+        message += " Name: " + document.getElementById("myname").value;
+
+        message += " Age: " + document.getElementById("age").value;
+
+        message += " HEQ: " + document.getElementById("heq").value;
+
+        if (document.getElementById("male").checked) {
+          message += " Gender: Male";
+        }
+
+        if (document.getElementById("female").checked) {
+          message += " Gender: Female";
+        }
+        // alert("Gender: " + document.getElementById('female').value);
+
+        message += " Comment: " + document.getElementById("comments").value;
+        alert(message);
+
+        event.preventDefault();
+      }
+    </script>
+    <style>
+      h1 {
+        font-family: verdana;
+        color: blue;
+        text-decoration: overline;
+        text-align: center;
+      }
+      p {
+        font-size: 20px;
+      }
+
+      div{
+          margin-bottom: 10px;
+      }
+
+      label {
+          width:150px;
+          display: inline-block;
+          
+      }
+
+      
+
+      #action-buttons {
+          margin-top: 20px;
+          background: blue;
+          padding: 10px;
+          text-align: center;
+      }
+
+      #action-buttons > input {
+          background: white;
+          padding: 5px;
+          border: none;
+          font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student Information</h1>
+    <p>
+      Please fill in all the details
+    </p>
+
+    <form action="">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="myname" />
+        </div>
+
+        <div>
+          <label for="age">Age</label>
+          <input type="text" id="age" />
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Other Information</legend>
+
+        
+        <div>
+          <label for="gender">Gender</label>
+          <input type="radio" name="gender" id="male" value="male" /> Male
+          <input type="radio" name="gender" id="female" value="female" /> Female
+        </div>
+        <div>
+          <label for="heq">HEQ</label>
+          <select name="heq" id="heq">
+            <option value="bach">Bachelor</option>
+            <option value="al">AL</option>
+            <option value="ol">OL</option>
+          </select>
+        </div>
+        <div>
+          <label for="comments">Comments</label>
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        
+        </fieldset>
+
+        <div id="action-buttons">
+          <input type="submit" onclick="showDetails()" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
+    </form>
+  </body>
+</html>

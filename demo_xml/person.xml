@@ -1,0 +1,20 @@
+<persons>
+<person>
+    <name> Shiham Samsudeen </name>
+    <age> 34 </age>
+    <dob> Jan 26th </dob>
+    <address>
+        <postaladdress> 33, Nedunkulam Road, Ptl</postaladdress>
+        <billingaddress> 33, Nedunkulam Road, Ptl</billingaddress>
+    </address>
+</person>
+<person>
+    <name> Inamul Hasan </name>
+    <age> 34 </age>
+    <dob> Jan 26th </dob>
+    <address>
+        <postaladdress> 33, Nedunkulam Road, Ptl</postaladdress>
+        <billingaddress> 33, Nedunkulam Road, Ptl</billingaddress>
+    </address>
+</person>
+</persons>
